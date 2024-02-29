@@ -1,4 +1,68 @@
 * {
-    border: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    /* จัดกึ่งกลางไม่ได้ */
+    top: 0;
+    left: 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0px auto;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-contact {
+    display: flex;
+}
+
+.phone-rotate {
+    text-align: end;
+    justify-content: center;
+    transform: rotate(90deg);
+    background-color: green;
+    border-radius: 0 50px 50px 0;
+    height: 40px;
+    width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phone-number {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.hero {
+    background-color: #023e8a;
+    background-image: linear-gradient(to bottom, #023e8a, #6DACEE);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
