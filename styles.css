@@ -1,26 +1,24 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
 }
 
 nav {
-    position: absolute;
-    /* จัดกึ่งกลางไม่ได้ */
-    top: 0;
-    left: 0;
-    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 15px 25px;
     margin: 0px auto;
-
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 10%;
 }
 
 nav ul {
@@ -34,7 +32,6 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
     font-weight: 500;
 }
 
@@ -43,14 +40,17 @@ nav ul li a {
 }
 
 .phone-rotate {
-    text-align: end;
-    justify-content: center;
-    transform: rotate(90deg);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    padding-right: 15px;
     background-color: green;
     border-radius: 0 50px 50px 0;
-    height: 40px;
+    height: 35px;
     width: 150px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    rotate: 90deg;
 }
 
 .phone-number {
@@ -58,17 +58,49 @@ nav ul li a {
     font-weight: 500;
 }
 
+/* hero section */
 .hero {
     background-image: linear-gradient(to bottom, #023e8a, #6DACEE);
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.project {
+.hero-container {
     display: flex;
-    color: #000;
+    width: 80%;
+    justify-content: start;
+    margin: 0 auto;
+}
+
+.hero-textbox > fieldset {
+    display: flex;
+  flex-direction: column;
+    width: 300px;
+    height: 300px;
+    padding: 16px;
+    border-width: 5px solid white;
+}
+
+.hero-textbox > fieldset > legend {
+    order: -1;
+}
+
+
+/* project section */
+.project-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .project-img {
-    translate: 20px -25px;
+    translate: 0 -25px;
+    box-shadow: 0px 20px 9px -12px rgba(0,0,0,0.1);
+}
+
+.project-text {
+    width: 50%;
 }
