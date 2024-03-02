@@ -68,3 +68,7 @@ nav ul li a {
     display: flex;
     color: #000;
 }
+
+.project-img {
+    translate: 20px -25px;
+}
