@@ -388,7 +388,7 @@ body {
     width: 260px;
     height: 220px;
     object-fit: cover;
-    
+
 }
 
 .goster-card-title, .goster-card-address, .goster-card-currency {
@@ -466,11 +466,11 @@ footer a {
     font-size: 1.2rem;
 }
 
-.footter-address {
+.footer-address {
     margin-bottom: 20px;
 }
 
-.footter-address p {
+.footer-address p {
     color: white;
     font-size: 1.2rem;
 }
