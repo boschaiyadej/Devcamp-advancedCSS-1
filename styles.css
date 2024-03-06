@@ -12,6 +12,7 @@ body {
     color: black;
 }
 
+/* navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -24,6 +25,7 @@ nav {
     left: 10%;
 }
 
+/* nav menu */
 nav ul {
     display: flex;
     list-style: none;
@@ -38,6 +40,7 @@ nav ul li a {
     font-weight: 500;
 }
 
+/* nav right side */
 .nav-contact {
     display: flex;
     align-items: end;
@@ -69,7 +72,10 @@ nav ul li a {
 
 /* hero section */
 .hero {
-    background-image: linear-gradient(to bottom, #023e8a, #6DACEE);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(https://images.unsplash.com/photo-1540756372570-ed52ab3ac2c6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -89,13 +95,13 @@ nav ul li a {
     width: 300px;
     height: 300px;
     padding: 16px;
-    border: 10px solid white;
+    border: 3px solid white;
+    box-shadow: 1px;
 }
 
 .hero-textbox>fieldset>legend {
     order: -1;
 }
-
 
 /* project section */
 .project-container {
