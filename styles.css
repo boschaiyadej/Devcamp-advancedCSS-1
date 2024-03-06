@@ -358,3 +358,55 @@ body {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+/* goster section */
+.goster {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.goster-container {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+}
+
+.goster-slide {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.goster-card {
+    box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+.goster-card img {
+    width: 260px;
+    height: 220px;
+    object-fit: cover;
+    
+}
+
+.goster-card-title, .goster-card-address, .goster-card-currency {
+    margin: 20px;
+}
+
+.goster-card-title h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(63, 63, 63);
+}
+
+.goster-card-address p:last-child {
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+}
+
+.goster-card-currency p {
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+}
