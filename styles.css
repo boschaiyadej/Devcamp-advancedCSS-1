@@ -27,7 +27,7 @@ body {
     gap: 40px;
 }
 
-.nav-center ul > li > a {
+.nav-center ul>li>a {
     font-weight: 400;
     color: white;
 }
@@ -67,12 +67,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 15px;
+    padding-right: 14px;
     background-color: green;
     border-radius: 0 0 50px 50px;
-    height: 150px;
-    width: 35px;
-    box-shadow: 0px 8px 10px 10px rgba(0,0,0,0.1);
+    height: 140px;
+    width: 34px;
+    box-shadow: 0px 8px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-contact-text {
@@ -81,7 +81,7 @@ body {
 
 .nav-contact-phone {
     color: white;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -100,50 +100,34 @@ body {
 }
 
 .hero-container {
-    display: flex;
-    width: 80%;
-    justify-content: start;
-    margin: 0 auto;
+    margin: 0px auto;
+    width: 60%;
 }
 
-.hero-textbox>fieldset {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 300px;
-    padding: 16px;
-    border: 3px solid white;
-    box-shadow: 1px;
+.hero-textbox fieldset {
+    height: 550px;
+    width: 450px;
+    margin: 100px 0 0 100px;
+    transform: rotate(-90deg);
+    border: 5px solid white;
+    color: white;
 }
 
-.hero-textbox>fieldset>legend {
-    order: -1;
+.hero-textbox legend {
+    transform: rotate(90deg);
+    margin: 0px 0px 0px 150px;
 }
 
-/* project section */
-.project-container {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    margin: 0 auto;
+.hero-textbox legend h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
 }
 
-.project-box {
-    display: flex;
-}
-
-.project-box-img {
-    translate: 0 -25px;
-    box-shadow: 0px 20px 9px -12px rgba(0, 0, 0, 0.1);
-}
-
-.project-box-color {
-    width: 80px;
-    height: 80px;
-    background-color: green;
-    translate: 0 70px;
-}
-
-.project-text {
-    width: 50%;
+.hero-textbox p {
+    font-size: 20px;
+    transform: rotate(90deg);
+    transform-origin: left;
+    margin: 0px 0px 0px 100px;
+    color: white;
 }
