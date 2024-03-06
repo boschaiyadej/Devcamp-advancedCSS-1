@@ -105,8 +105,8 @@ body {
 }
 
 .hero-textbox fieldset {
-    height: 550px;
-    width: 450px;
+    height: 500px;
+    width: 400px;
     margin: 100px 0 0 100px;
     transform: rotate(-90deg);
     border: 5px solid white;
@@ -119,7 +119,7 @@ body {
 }
 
 .hero-textbox legend h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     color: white;
 }
@@ -130,4 +130,28 @@ body {
     transform-origin: left;
     margin: 0px 0px 0px 100px;
     color: white;
+}
+
+.hero-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin: 50px 0 0 100px;
+    gap: 5px;
+}
+
+.hero-slide-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 76, 144, 1);
+    font-weight: 500;
+}
+
+.hero-slide-number:hover {
+    background-color: rgba(255, 255, 255, 1)
 }
