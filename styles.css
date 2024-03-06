@@ -8,43 +8,59 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 /* navbar */
-nav {
+.nav-container {
+    margin: 0px auto;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px 25px;
-    margin: 0px auto;
-    width: 80%;
-    position: absolute;
-    top: 0;
-    left: 10%;
 }
 
-/* nav menu */
-nav ul {
+/* navbar center */
+.nav-center ul {
     display: flex;
     list-style: none;
+    gap: 40px;
 }
 
-nav ul li {
-    margin-right: 30px;
+.nav-center ul > li > a {
+    font-weight: 400;
+    color: white;
 }
 
-nav ul li a {
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* nav right side */
-.nav-contact {
+/* navbar right */
+.nav-right {
     display: flex;
     align-items: end;
-    gap: 5px;
+    gap: 10px;
+}
+
+.nav-contact-banner {
+    height: 120px;
+    width: 40px;
+    background-color: green;
+    display: inline;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0 0 50px 50px;
+}
+
+.nav-contact-banner a {
+    color: white;
+    font-weight: 100;
+    transform: rotate(90deg);
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-contact-banner i {
+    color: white
 }
 
 .phone-rotate {
@@ -56,18 +72,21 @@ nav ul li a {
     border-radius: 0 0 50px 50px;
     height: 150px;
     width: 35px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 10px 10px rgba(0,0,0,0.1);
 }
 
-.phone-rotate-text {
-    display: flex;
-    align-items: center;
-    rotate: 90deg;
+.nav-contact-text {
+    margin-bottom: 12px;
 }
 
-.phone-number {
+.nav-contact-phone {
+    color: white;
     font-size: 25px;
     font-weight: 500;
+}
+
+.nav-contact-email {
+    color: white;
 }
 
 /* hero section */
@@ -78,8 +97,6 @@ nav ul li a {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
 .hero-container {
